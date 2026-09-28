@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://elasticemail.com"><img src="https://raw.githubusercontent.com/ElasticEmail/.github/main/profile/hero.png" alt="Elastic Email: Email API, SMTP, marketing tools and developer infrastructure" width="100%" /></a>
+<a href="https://elasticemail.com"><img src="https://raw.githubusercontent.com/ElasticEmail/.github/main/profile/hero.jpg" alt="Elastic Email: Email API, SMTP, marketing tools and developer infrastructure" width="100%" /></a>
 
 [![Website](https://img.shields.io/badge/website-elasticemail.com-0A7BBB)](https://elasticemail.com)
 [![API docs](https://img.shields.io/badge/API-v4%20docs-0A7BBB)](https://elasticemail.com/developers/api-documentation/rest-api)
