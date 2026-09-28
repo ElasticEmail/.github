@@ -1,10 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/ElasticEmail/elasticemail-csharp/master/src/ElasticEmail/ee-logo.png" alt="Elastic Email" width="96" />
-
-# Elastic Email
-
-Email delivery for developers and marketers: send transactional and bulk email over a REST API or SMTP, and manage contacts, campaigns, templates and domains from code.
+<a href="https://elasticemail.com"><img src="https://raw.githubusercontent.com/ElasticEmail/.github/main/profile/hero.png" alt="Elastic Email: Email API, SMTP, marketing tools and developer infrastructure" width="100%" /></a>
 
 [![Website](https://img.shields.io/badge/website-elasticemail.com-0A7BBB)](https://elasticemail.com)
 [![API docs](https://img.shields.io/badge/API-v4%20docs-0A7BBB)](https://elasticemail.com/developers/api-documentation/rest-api)
