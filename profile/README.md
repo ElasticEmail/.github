@@ -86,7 +86,7 @@ Then choose an [SDK](#official-sdks) for your language. Each repository has a qu
 
 ## Contributing
 
-Pull requests are welcome in every public repository. Please read that repository's `CONTRIBUTING.md` and follow our Code of Conduct. To report a security vulnerability, follow the repository's `SECURITY.md` and don't open a public issue.
+Pull requests are welcome in every public repository. Please read our [contributing guide](https://github.com/ElasticEmail/.github/blob/main/CONTRIBUTING.md) (or the repository's own `CONTRIBUTING.md`) and follow our [Code of Conduct](https://github.com/ElasticEmail/.github/blob/main/CODE_OF_CONDUCT.md). To report a security vulnerability, follow our [security policy](https://github.com/ElasticEmail/.github/blob/main/SECURITY.md) and don't open a public issue.
 
 > [!NOTE]
 > The `ElasticEmail.WebApiClient-*` repositories contain the legacy **API v2** clients. They are archived and no longer maintained. New projects should use the v4 SDKs above.

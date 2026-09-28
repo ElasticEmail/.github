@@ -1,0 +1,29 @@
+name: Feature request
+description: Suggest an improvement to an SDK, tool, integration or its documentation.
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: use-case
+    attributes:
+      label: What are you trying to do?
+      description: Describe your use case first.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would help?
+      description: Describe the change you'd like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any workarounds or other approaches you've tried.
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Links, code samples or anything else that helps.
