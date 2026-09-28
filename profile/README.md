@@ -1,0 +1,100 @@
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/ElasticEmail/elasticemail-csharp/master/src/ElasticEmail/ee-logo.png" alt="Elastic Email" width="96" />
+
+# Elastic Email
+
+Email delivery for developers and marketers: send transactional and bulk email over a REST API or SMTP, and manage contacts, campaigns, templates and domains from code.
+
+[![Website](https://img.shields.io/badge/website-elasticemail.com-0A7BBB)](https://elasticemail.com)
+[![API docs](https://img.shields.io/badge/API-v4%20docs-0A7BBB)](https://elasticemail.com/developers/api-documentation/rest-api)
+[![X (Twitter)](https://img.shields.io/badge/follow-%40Elastic__Email-000000?logo=x)](https://x.com/Elastic_Email)
+[![Followers](https://img.shields.io/github/followers/ElasticEmail?logo=github&label=followers)](https://github.com/ElasticEmail)
+
+[SDKs](#official-sdks) •
+[Tools & integrations](#tools-and-integrations) •
+[AI agents](#ai-agents) •
+[Quick start](#quick-start) •
+[Support](#support)
+
+</div>
+
+---
+
+## Official SDKs
+
+Every SDK wraps the same [REST API v4](https://elasticemail.com/developers/api-documentation/rest-api), so the same endpoints and models are available in every language.
+
+| Language | Repository | Install | Package |
+|---|---|---|---|
+| **C# / .NET** | [elasticemail-csharp](https://github.com/ElasticEmail/elasticemail-csharp) | `dotnet add package ElasticEmail` | [![NuGet](https://img.shields.io/nuget/v/ElasticEmail?logo=nuget&label=&color=004880)](https://www.nuget.org/packages/ElasticEmail) |
+| **PHP** | [elasticemail-php](https://github.com/ElasticEmail/elasticemail-php) | `composer require elasticemail/elasticemail-php` | [![Packagist](https://img.shields.io/packagist/v/elasticemail/elasticemail-php?logo=packagist&logoColor=white&label=&color=F28D1A)](https://packagist.org/packages/elasticemail/elasticemail-php) |
+| **Python** | [elasticemail-python](https://github.com/ElasticEmail/elasticemail-python) | `pip install ElasticEmail` | [![PyPI](https://img.shields.io/pypi/v/ElasticEmail?logo=pypi&logoColor=white&label=&color=3775A9)](https://pypi.org/project/ElasticEmail/) |
+| **JavaScript / Node.js** | [elasticemail-js](https://github.com/ElasticEmail/elasticemail-js) | `npm install @elasticemail/elasticemail-client` | [![npm](https://img.shields.io/npm/v/@elasticemail/elasticemail-client?logo=npm&label=&color=CB3837)](https://www.npmjs.com/package/@elasticemail/elasticemail-client) |
+| **TypeScript (axios)** | [elasticemail-ts-axios](https://github.com/ElasticEmail/elasticemail-ts-axios) | `npm install @elasticemail/elasticemail-client-ts-axios` | [![npm](https://img.shields.io/npm/v/@elasticemail/elasticemail-client-ts-axios?logo=npm&label=&color=CB3837)](https://www.npmjs.com/package/@elasticemail/elasticemail-client-ts-axios) |
+| **Angular** | [elasticemail-ts-angular](https://github.com/ElasticEmail/elasticemail-ts-angular) | `npm install @elasticemail/elasticemail-client-ts-angular` | [![npm](https://img.shields.io/npm/v/@elasticemail/elasticemail-client-ts-angular?logo=npm&label=&color=CB3837)](https://www.npmjs.com/package/@elasticemail/elasticemail-client-ts-angular) |
+| **Java** | [elasticemail-java](https://github.com/ElasticEmail/elasticemail-java) | Maven / Gradle, see README | [![Release](https://img.shields.io/github/v/release/ElasticEmail/elasticemail-java?logo=github&label=)](https://github.com/ElasticEmail/elasticemail-java/releases) |
+| **Go** | [elasticemail-go](https://github.com/ElasticEmail/elasticemail-go) | `go get github.com/elasticemail/elasticemail-go/v4@latest` | [![Release](https://img.shields.io/github/v/release/ElasticEmail/elasticemail-go?logo=github&label=)](https://github.com/ElasticEmail/elasticemail-go/releases) |
+| **Ruby** | [elasticemail-ruby](https://github.com/ElasticEmail/elasticemail-ruby) | `gem install ElasticEmail` | [![RubyGems](https://img.shields.io/gem/v/ElasticEmail?logo=rubygems&logoColor=white&label=&color=E9573F)](https://rubygems.org/gems/ElasticEmail) |
+| **Rust** | [elasticemail-rust](https://github.com/ElasticEmail/elasticemail-rust) | `cargo add ElasticEmail` | [![crates.io](https://img.shields.io/crates/v/ElasticEmail?logo=rust&label=&color=DEA584)](https://crates.io/crates/ElasticEmail) |
+| **Perl** | [elasticemail-perl](https://github.com/ElasticEmail/elasticemail-perl) | `cpanm --installdeps .` | [![Release](https://img.shields.io/github/v/release/ElasticEmail/elasticemail-perl?logo=github&label=)](https://github.com/ElasticEmail/elasticemail-perl/releases) |
+| **Bash** | [elasticemail-bash](https://github.com/ElasticEmail/elasticemail-bash) | Clone the repo, see README | [![Release](https://img.shields.io/github/v/release/ElasticEmail/elasticemail-bash?logo=github&label=)](https://github.com/ElasticEmail/elasticemail-bash/releases) |
+
+## Tools and integrations
+
+| Project | What it does |
+|---|---|
+| [**elasticemail-cli**](https://github.com/ElasticEmail/elasticemail-cli) | Command-line tool for sending email and campaigns and managing templates, contacts and domains. `npm install -g elastic-email-cli` |
+| [**elasticemail-send-email-action**](https://github.com/ElasticEmail/elasticemail-send-email-action) | GitHub Action that sends email from a workflow, for example build reports or release notes. `uses: ElasticEmail/elasticemail-send-email-action@v1` |
+| [**elasticemail-mautic-mailer**](https://github.com/ElasticEmail/elasticemail-mautic-mailer) | Mautic plugin for sending campaigns, segment emails and transactional mail through Elastic Email. |
+| [**elasticemail-examples**](https://github.com/ElasticEmail/elasticemail-examples) | Working examples for transactional email, SMTP, webhooks, contacts and more. Start here if you're new. |
+
+## AI agents
+
+| Project | What it does |
+|---|---|
+| [**elasticemail-mcp-server**](https://github.com/ElasticEmail/elasticemail-mcp-server) | MCP server that lets AI agents (Claude, Cursor, VS Code and others) send email and work with your Elastic Email account. |
+| [**elasticemail-skills**](https://github.com/ElasticEmail/elasticemail-skills) | Agent skills that teach coding assistants the Elastic Email API. `npx skills add ElasticEmail/elasticemail-skills` |
+
+## Quick start
+
+1. [Create an account](https://elasticemail.com/account/) and verify a sending domain.
+2. Create an API key under **Settings → Manage API Keys**.
+3. Send your first email:
+
+```bash
+curl -X POST https://api.elasticemail.com/v4/emails/transactional \
+  -H "X-ElasticEmail-ApiKey: $ELASTICEMAIL_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "Recipients": { "To": ["recipient@example.com"] },
+    "Content": {
+      "From": "you@your-domain.com",
+      "Subject": "Hello from Elastic Email",
+      "Body": [{ "ContentType": "HTML", "Content": "<p>It works!</p>" }]
+    }
+  }'
+```
+
+Then choose an [SDK](#official-sdks) for your language. Each repository has a quick start and examples.
+
+## Support
+
+> [!IMPORTANT]
+> The fastest way to get help is the **chat widget on [elasticemail.com](https://elasticemail.com)**. Our support team can help with your account, sending, deliverability and API questions.
+
+- 💬 [Chat with support](https://elasticemail.com) (preferred)
+- 📚 [API documentation](https://elasticemail.com/developers/api-documentation/rest-api)
+- 🐛 GitHub issues in the relevant repository, for bugs in that SDK or tool only
+- ✉️ [support@elasticemail.com](mailto:support@elasticemail.com)
+
+## Contributing
+
+Pull requests are welcome in every public repository. Please read that repository's `CONTRIBUTING.md` and follow our Code of Conduct. To report a security vulnerability, follow the repository's `SECURITY.md` and don't open a public issue.
+
+> [!NOTE]
+> The `ElasticEmail.WebApiClient-*` repositories contain the legacy **API v2** clients. They are archived and no longer maintained. New projects should use the v4 SDKs above.
+
+<div align="center">
+<sub>Made with ❤️ by the Elastic Email team</sub>
+</div>
