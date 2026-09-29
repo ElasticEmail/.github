@@ -19,9 +19,10 @@
 
 ## Quick start
 
-1. [Create an account](https://elasticemail.com/account/) and verify a sending domain.
-2. Create an API key under **Settings → Manage API Keys**.
-3. Send your first email:
+1. [Create an account](https://elasticemail.com/account/).
+2. [Verify your sending domain](https://help.elasticemail.com/en/articles/4934400-how-to-verify-your-domain). This is required: Elastic Email only sends from verified domains.
+3. Create an API key under **Settings → Manage API Keys**.
+4. Send your first email, using an address on your verified domain as the sender:
 
 ```bash
 curl -X POST https://api.elasticemail.com/v4/emails/transactional \
