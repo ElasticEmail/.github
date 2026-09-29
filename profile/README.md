@@ -7,15 +7,37 @@
 [![X (Twitter)](https://img.shields.io/badge/follow-%40Elastic__Email-000000?logo=x)](https://x.com/Elastic_Email)
 [![Followers](https://img.shields.io/github/followers/ElasticEmail?logo=github&label=followers)](https://github.com/ElasticEmail)
 
+[Quick start](#quick-start) •
 [SDKs](#official-sdks) •
 [Tools & integrations](#tools-and-integrations) •
 [AI agents](#ai-agents) •
-[Quick start](#quick-start) •
 [Support](#support)
 
 </div>
 
 ---
+
+## Quick start
+
+1. [Create an account](https://elasticemail.com/account/) and verify a sending domain.
+2. Create an API key under **Settings → Manage API Keys**.
+3. Send your first email:
+
+```bash
+curl -X POST https://api.elasticemail.com/v4/emails/transactional \
+  -H "X-ElasticEmail-ApiKey: $ELASTICEMAIL_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "Recipients": { "To": ["recipient@example.com"] },
+    "Content": {
+      "From": "you@your-domain.com",
+      "Subject": "Hello from Elastic Email",
+      "Body": [{ "ContentType": "HTML", "Content": "<p>It works!</p>" }]
+    }
+  }'
+```
+
+Then choose an [SDK](#official-sdks) for your language below. Each repository has a quick start and examples.
 
 ## Official SDKs
 
@@ -51,28 +73,6 @@ Every SDK wraps the same [REST API v4](https://elasticemail.com/developers/api-d
 |---|---|
 | [**elasticemail-mcp-server**](https://github.com/ElasticEmail/elasticemail-mcp-server) | MCP server that lets AI agents (Claude, Cursor, VS Code and others) send email and work with your Elastic Email account. |
 | [**elasticemail-skills**](https://github.com/ElasticEmail/elasticemail-skills) | Agent skills that teach coding assistants the Elastic Email API. `npx skills add ElasticEmail/elasticemail-skills` |
-
-## Quick start
-
-1. [Create an account](https://elasticemail.com/account/) and verify a sending domain.
-2. Create an API key under **Settings → Manage API Keys**.
-3. Send your first email:
-
-```bash
-curl -X POST https://api.elasticemail.com/v4/emails/transactional \
-  -H "X-ElasticEmail-ApiKey: $ELASTICEMAIL_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "Recipients": { "To": ["recipient@example.com"] },
-    "Content": {
-      "From": "you@your-domain.com",
-      "Subject": "Hello from Elastic Email",
-      "Body": [{ "ContentType": "HTML", "Content": "<p>It works!</p>" }]
-    }
-  }'
-```
-
-Then choose an [SDK](#official-sdks) for your language. Each repository has a quick start and examples.
 
 ## Support
 
