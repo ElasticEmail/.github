@@ -2,27 +2,81 @@
 
 <a href="https://elasticemail.com"><img src="https://raw.githubusercontent.com/ElasticEmail/.github/main/profile/hero.jpg" alt="Elastic Email: Email API, SMTP, marketing tools and developer infrastructure" width="100%" /></a>
 
-[![Website](https://img.shields.io/badge/website-elasticemail.com-0A7BBB)](https://elasticemail.com)
-[![API docs](https://img.shields.io/badge/API-v4%20docs-0A7BBB)](https://elasticemail.com/developers/api-documentation/rest-api)
-[![X (Twitter)](https://img.shields.io/badge/follow-%40Elastic__Email-000000?logo=x)](https://x.com/Elastic_Email)
-[![Followers](https://img.shields.io/github/followers/ElasticEmail?logo=github&label=followers)](https://github.com/ElasticEmail)
+### Email API and SMTP for developers. Clone a starter, add your API key, send a real email in five minutes.
 
-[Quick start](#quick-start) •
+[![API docs](https://img.shields.io/badge/API-v4%20docs-0A7BBB)](https://elasticemail.com/developers/api-documentation/rest-api)
+[![Examples](https://img.shields.io/github/stars/ElasticEmail/elasticemail-examples?logo=github&label=examples)](https://github.com/ElasticEmail/elasticemail-examples)
+[![X (Twitter)](https://img.shields.io/badge/follow-%40Elastic__Email-000000?logo=x)](https://x.com/Elastic_Email)
+
+[Starters](#start-from-a-working-project) •
 [SDKs](#official-sdks) •
-[Tools & integrations](#tools-and-integrations) •
+[Tools](#tools-and-integrations) •
 [AI agents](#ai-agents) •
+[Blog](#from-the-blog) •
 [Support](#support)
 
 </div>
 
 ---
 
-## Quick start
+## Start from a working project
 
-1. [Create an account](https://elasticemail.com/account/).
-2. [Verify your sending domain](https://help.elasticemail.com/en/articles/4934400-how-to-verify-your-domain). This is required: Elastic Email only sends from verified domains.
-3. Create an API key under **Settings → Manage API Keys**.
-4. Send your first email, using an address on your verified domain as the sender:
+Pick one, clone it, run it. Each starter sends a real email on the first run and is a complete app you can build on.
+
+| Starter | What you get | Stack |
+|---|---|---|
+| [**Next.js app**](https://github.com/ElasticEmail/elasticemail-examples/tree/main/nextjs-elasticemail-examples) | API routes for sending, batch sends, attachments, templates, webhooks, inbound email and double opt-in, with a page per feature | TypeScript, Next.js 15 |
+| [**Python web app**](https://github.com/ElasticEmail/elasticemail-examples/tree/main/python-elasticemail-examples) | The same `/send` API in Flask, FastAPI and Django, plus a single-file script for every feature | Python 3 |
+| [**AI agent that sends email**](https://github.com/ElasticEmail/elasticemail-examples/tree/main/ai-agents-elasticemail-examples) | A Claude agent with a `send_email` tool and a recipient allowlist, so it can only send where you let it | TypeScript, Vercel AI SDK |
+
+Before you run one: [create an account](https://elasticemail.com/account/), [verify your sending domain](https://help.elasticemail.com/en/articles/4934400-how-to-verify-your-domain) (Elastic Email only sends from verified domains) and create an API key under **Settings → Manage API Keys**.
+
+```bash
+git clone https://github.com/ElasticEmail/elasticemail-examples.git
+cd elasticemail-examples
+```
+
+<table>
+<tr><th>Next.js</th><th>Python</th><th>AI agent</th></tr>
+<tr valign="top">
+<td>
+
+```bash
+cd nextjs-elasticemail-examples/typescript
+npm install
+cp .env.example .env
+npm run dev
+```
+
+</td>
+<td>
+
+```bash
+cd python-elasticemail-examples
+python -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env
+python examples/fastapi_app.py
+```
+
+</td>
+<td>
+
+```bash
+cd ai-agents-elasticemail-examples/vercel-ai-sdk
+npm install
+cp .env.example .env
+npm start
+```
+
+</td>
+</tr>
+</table>
+
+Put your API key and a sender on your verified domain in `.env`. Each starter's `QUICKSTART.md` covers the rest. Express, Laravel, Go, Rust, .NET, SvelteKit, serverless and 20+ other stacks are in [elasticemail-examples](https://github.com/ElasticEmail/elasticemail-examples).
+
+<details>
+<summary><b>No project yet? Send with curl</b></summary>
 
 ```bash
 curl -X POST https://api.elasticemail.com/v4/emails/transactional \
@@ -38,7 +92,7 @@ curl -X POST https://api.elasticemail.com/v4/emails/transactional \
   }'
 ```
 
-Then choose an [SDK](#official-sdks) for your language below. Each repository has a quick start and examples.
+</details>
 
 ## Official SDKs
 
@@ -66,7 +120,6 @@ Every SDK wraps the same [REST API v4](https://elasticemail.com/developers/api-d
 | [**elasticemail-cli**](https://github.com/ElasticEmail/elasticemail-cli) | Command-line tool for sending email and campaigns and managing templates, contacts and domains. `npm install -g elastic-email-cli` |
 | [**elasticemail-send-email-action**](https://github.com/ElasticEmail/elasticemail-send-email-action) | GitHub Action that sends email from a workflow, for example build reports or release notes. `uses: ElasticEmail/elasticemail-send-email-action@v1` |
 | [**elasticemail-mautic-mailer**](https://github.com/ElasticEmail/elasticemail-mautic-mailer) | Mautic plugin for sending campaigns, segment emails and transactional mail through Elastic Email. |
-| [**elasticemail-examples**](https://github.com/ElasticEmail/elasticemail-examples) | Working examples for transactional email, SMTP, webhooks, contacts and more. Start here if you're new. |
 
 ## AI agents
 
@@ -74,6 +127,13 @@ Every SDK wraps the same [REST API v4](https://elasticemail.com/developers/api-d
 |---|---|
 | [**elasticemail-mcp-server**](https://github.com/ElasticEmail/elasticemail-mcp-server) | MCP server that lets AI agents (Claude, Cursor, VS Code and others) send email and work with your Elastic Email account. |
 | [**elasticemail-skills**](https://github.com/ElasticEmail/elasticemail-skills) | Agent skills that teach coding assistants the Elastic Email API. `npx skills add ElasticEmail/elasticemail-skills` |
+
+## From the blog
+
+- [Meet the Elastic Email CLI](https://elasticemail.com/blog/meet-the-elastic-email-cli): send email and campaigns and manage templates from your terminal, or script it with `--json`.
+- [DMARC explained, with a guide to DMARCRadar](https://elasticemail.com/blog/dmarcradar-by-elastic-email-dmarc-explained-guide-to-the-new-monitoring-tool): what DMARC reports tell you and how to act on them.
+
+More on the [Elastic Email blog](https://elasticemail.com/blog).
 
 ## Support
 
